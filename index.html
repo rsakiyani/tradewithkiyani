@@ -1,336 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trade With Kiyani | Guangzhou Sourcing Agent for UK Amazon & TikTok Sellers</title>
-    <meta name="description" content="Ali Kiyani, based in Guangzhou, China. Factory-direct sourcing for UK Amazon FBA, TikTok Shop, eBay & wholesale. Quality control, low MOQ, 10-14 day shipping.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trade With Kiyani — China Sourcing Agent | Guangzhou · UK · GCC · Pakistan</title>
+  <meta name="description" content="Ali Kiyani sources factory-direct products from China for UK Amazon sellers, GCC importers, and Pakistani traders. Quality control, low MOQ, 10-14 day shipping." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<!-- ─── NAVBAR ─── -->
-<nav id="navbar">
-    <div class="nav-container">
-        <a href="index.html" class="nav-logo">
-            <div class="logo-icon">TK</div>
-            <div class="logo-text">
-                <span>Trade With Kiyani</span>
-                <span>Guangzhou · UK · Pakistan · Dubai</span>
-            </div>
-        </a>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="social-platforms.html">Social Platforms</a></li>
-            <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
-        </ul>
-        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-            <span></span><span></span><span></span>
-        </div>
+<!-- ==================== NAVIGATION ==================== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">TK</div>
+      <div>
+        <div class="logo-text">Trade With Kiyani</div>
+        <div class="logo-sub">Guangzhou · China</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="social.html">Social</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:12px;" class="nav-cta-group">
+      <a href="index.html#contact" class="nav-cta">Get a Quote</a>
+      <a href="https://wa.me/447775412819" target="_blank" class="nav-whatsapp" aria-label="WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </a>
     </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
-<!-- ─── MOBILE MENU ─── -->
+<!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-close" onclick="toggleMenu()"><i class="fas fa-times"></i></button>
-    <a href="index.html" onclick="toggleMenu()">Home</a>
-    <a href="products.html" onclick="toggleMenu()">Products</a>
-    <a href="news.html" onclick="toggleMenu()">News</a>
-    <a href="social-platforms.html" onclick="toggleMenu()">Social Platforms</a>
-    <a href="#contact" onclick="toggleMenu()">Get a Quote</a>
+  <button class="mobile-close" onclick="toggleMenu()">&times;</button>
+  <a href="index.html" onclick="toggleMenu()">Home</a>
+  <a href="products.html" onclick="toggleMenu()">Products</a>
+  <a href="news.html" onclick="toggleMenu()">News</a>
+  <a href="social.html" onclick="toggleMenu()">Social</a>
+  <a href="index.html#contact" onclick="toggleMenu()" style="margin-top:16px;">
+    <span class="btn-primary">Get a Quote</span>
+  </a>
 </div>
 
-<!-- ─── HERO ─── -->
-<section class="hero" id="home">
-    <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
-    <div class="hero-container">
-        <div class="hero-left">
-            <div class="hero-badge">
-                <i class="fas fa-circle"></i>
-                Guangzhou Based · Factory Direct · No Middlemen
-            </div>
-            <h1 class="hero-title">
-                Your Eyes on<br>the Ground
-                <span class="accent">in China.</span>
-            </h1>
-            <p class="hero-subtitle">
-                Ali Kiyani, based in Guangzhou, China. I personally source factory-direct products for UK Amazon FBA, TikTok Shop, eBay, and wholesale buyers. Quality control, low MOQ, 10-14 day shipping.
-            </p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn-primary">
-                    <i class="fas fa-file-alt"></i>
-                    Get Free Quote
-                </a>
-                <a href="https://wa.me/447775412819" target="_blank" class="btn-whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                    WhatsApp Me
-                </a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <div class="stat-number">UK</div>
-                    <div class="stat-label">Amazon & TikTok Sellers</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">GCC</div>
-                    <div class="stat-label">UAE & Gulf Importers</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">PK</div>
-                    <div class="stat-label">Pakistani Traders</div>
-                </div>
-            </div>
+<!-- ==================== HERO ==================== -->
+<section class="hero" id="hero">
+  <div class="particles-container" id="particles"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-flex">
+      <div>
+        <div class="hero-label">Guangzhou, China &mdash; Your Sourcing Partner</div>
+        <h1 class="hero-title">Your eyes on the ground in China.</h1>
+        <p class="hero-subtitle">Ali Kiyani sources factory-direct products for UK Amazon sellers, GCC importers, and Pakistani traders. Quality control, low MOQ, 10&ndash;14 day shipping.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn-primary">Get a Quote</a>
+          <a href="https://wa.me/447775412819" target="_blank" class="btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Me
+          </a>
         </div>
-        <div class="hero-visual">
-            <div class="hero-card">
-                <div class="card-header">
-                    <div class="card-avatar">AK</div>
-                    <div class="card-info">
-                        <h3>Ali Kiyani</h3>
-                        <p>Founder & China Sourcing Agent</p>
-                        <div class="location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            Guangzhou 🇨🇳 · UK 🇬🇧 · Pakistan 🇵🇰 · Dubai 🇦🇪
-                        </div>
-                    </div>
-                </div>
-                <div class="card-features">
-                    <div class="card-feature">
-                        <div class="card-feature-icon"><i class="fas fa-search"></i></div>
-                        <div>
-                            <div class="card-feature-text">Supplier Search & Vetting</div>
-                            <div class="card-feature-sub">3 shortlisted factories per product</div>
-                        </div>
-                    </div>
-                    <div class="card-feature">
-                        <div class="card-feature-icon"><i class="fas fa-shield-alt"></i></div>
-                        <div>
-                            <div class="card-feature-text">Quality Control Inspections</div>
-                            <div class="card-feature-sub">Pre-shipment verification</div>
-                        </div>
-                    </div>
-                    <div class="card-feature">
-                        <div class="card-feature-icon"><i class="fas fa-shipping-fast"></i></div>
-                        <div>
-                            <div class="card-feature-text">Fast Shipping to UK</div>
-                            <div class="card-feature-sub">10-14 days door to door</div>
-                        </div>
-                    </div>
-                    <div class="card-feature">
-                        <div class="card-feature-icon"><i class="fas fa-handshake"></i></div>
-                        <div>
-                            <div class="card-feature-text">No Supplier Commissions</div>
-                            <div class="card-feature-sub">You are my only client</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="floating-badge">
-                <i class="fab fa-whatsapp"></i>
-                WhatsApp-First Service
-            </div>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Products Sourced</div>
         </div>
+        <div>
+          <div class="stat-number">3</div>
+          <div class="stat-label">Markets Served</div>
+        </div>
+        <div>
+          <div class="stat-number">10-14</div>
+          <div class="stat-label">Day Shipping</div>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+  </div>
 </section>
 
-<!-- ─── TRUST BAR ─── -->
+<!-- ==================== TRUST BAR ==================== -->
 <div class="trust-bar">
-    <div class="trust-bar-inner">
-        <div class="trust-item"><i class="fas fa-check-circle"></i>Registered in Guangzhou</div>
-        <div class="trust-item"><i class="fas fa-check-circle"></i>UK-Focused Sourcing</div>
-        <div class="trust-item"><i class="fas fa-check-circle"></i>No Middlemen</div>
-        <div class="trust-item"><i class="fas fa-check-circle"></i>Quality Control Included</div>
-        <div class="trust-item"><i class="fas fa-check-circle"></i>10-14 Day Shipping</div>
-    </div>
+  <div class="trust-track" id="trustTrack">
+    <!-- Content injected by JS -->
+  </div>
 </div>
 
-<!-- ─── WHO I WORK WITH ─── -->
-<section class="markets" id="markets">
-    <div class="section-container">
-        <div class="section-header" style="text-align:center;">
-            <div class="section-tag" style="justify-content:center; display:flex;">Markets We Serve</div>
-            <h2 class="section-title" style="text-align:center;">Who I Work With</h2>
-            <p class="section-subtitle" style="margin:0 auto; text-align:center;">I understand the buying expectations, business culture, and import requirements of each market I serve.</p>
+<!-- ==================== SERVICES ==================== -->
+<section class="section">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div>
+        <div class="section-label">
+          <span class="section-label-line"></span>
+          <span class="section-label-text">What We Do</span>
         </div>
-        <div class="markets-grid">
-            <div class="market-card fade-in">
-                <span class="market-flag">🇬🇧</span>
-                <h3>United Kingdom</h3>
-                <div class="market-sub">UK Market</div>
-                <p>Amazon FBA sellers, TikTok Shop UK sellers, independent retailers, and UK-based businesses importing consumer goods from China.</p>
-                <ul class="market-targets">
-                    <li><i class="fas fa-circle"></i> Amazon FBA sellers sourcing 1-5 products</li>
-                    <li><i class="fas fa-circle"></i> TikTok Shop UK sellers needing low MOQ</li>
-                    <li><i class="fas fa-circle"></i> Independent UK retailers — fitness, pet, homewares</li>
-                    <li><i class="fas fa-circle"></i> eBay shops and online sellers</li>
-                </ul>
-            </div>
-            <div class="market-card fade-in fade-in-delay-1">
-                <span class="market-flag">🇦🇪</span>
-                <h3>GCC & Middle East</h3>
-                <div class="market-sub">UAE · Saudi · Qatar · Kuwait</div>
-                <p>GCC-based traders and importers through UAE residency and Dubai banking — making China sourcing trusted and professionally managed.</p>
-                <ul class="market-targets">
-                    <li><i class="fas fa-circle"></i> UAE-based traders importing from China</li>
-                    <li><i class="fas fa-circle"></i> Saudi and Gulf importers</li>
-                    <li><i class="fas fa-circle"></i> GCC businesses attending Canton Fair</li>
-                    <li><i class="fas fa-circle"></i> Dubai re-exporters</li>
-                </ul>
-            </div>
-            <div class="market-card fade-in fade-in-delay-2">
-                <span class="market-flag">🇵🇰</span>
-                <h3>Pakistan</h3>
-                <div class="market-sub">PK Market</div>
-                <p>Deep roots in Pakistani business culture — making me the natural choice for Pakistan-based importers sourcing from China.</p>
-                <ul class="market-targets">
-                    <li><i class="fas fa-circle"></i> Pakistani importers buying consumer goods</li>
-                    <li><i class="fas fa-circle"></i> Traders planning Canton Fair visits</li>
-                    <li><i class="fas fa-circle"></i> Entrepreneurs launching brands from China</li>
-                    <li><i class="fas fa-circle"></i> Wholesale traders for domestic retail</li>
-                </ul>
-            </div>
-        </div>
+        <h2 class="section-title">End-to-end sourcing from China's<br>manufacturing hub</h2>
+      </div>
+      <p class="section-subtitle">Ali personally handles every step &mdash; from factory search to your doorstep. No middlemen, no hidden fees.</p>
     </div>
+    <div class="services-grid">
+      <div class="service-card fade-in fade-in-delay-1">
+        <div class="service-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+        </div>
+        <h3 class="service-title">Supplier Search &amp; Vetting</h3>
+        <p class="service-desc">We visit 3+ factories per product, verify certifications, and shortlist only reliable manufacturers. You get video reports and transparent comparisons.</p>
+        <span class="service-link">Learn more &rarr;</span>
+      </div>
+      <div class="service-card fade-in fade-in-delay-2">
+        <div class="service-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <h3 class="service-title">Quality Control Inspections</h3>
+        <p class="service-desc">Pre-shipment inspections at every production stage. Photo and video documentation. We catch defects before they leave China.</p>
+        <span class="service-link">Learn more &rarr;</span>
+      </div>
+      <div class="service-card fade-in fade-in-delay-3">
+        <div class="service-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <h3 class="service-title">Shipping to UK, GCC &amp; Pakistan</h3>
+        <p class="service-desc">Air and sea freight coordination. Customs documentation handled. 10&ndash;14 days to UK, competitive rates to Dubai and Karachi.</p>
+        <span class="service-link">Learn more &rarr;</span>
+      </div>
+      <div class="service-card fade-in fade-in-delay-4">
+        <div class="service-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/></svg>
+        </div>
+        <h3 class="service-title">WhatsApp-First Communication</h3>
+        <p class="service-desc">Direct line to Ali on WhatsApp. Daily updates, photo reports, fast responses. No ticketing systems, no account managers &mdash; just direct access.</p>
+        <span class="service-link">Learn more &rarr;</span>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- ─── HOW IT WORKS ─── -->
-<section class="how-it-works" id="how-it-works">
-    <div class="section-container">
-        <div class="section-header" style="text-align:center;">
-            <div class="section-tag" style="justify-content:center; display:flex;">How It Works</div>
-            <h2 class="section-title" style="text-align:center;">From Enquiry to Delivery</h2>
-            <p class="section-subtitle" style="margin:0 auto; text-align:center;">A simple, transparent process — no surprises, no hidden steps.</p>
-        </div>
-        <div class="steps-grid">
-            <div class="step-item fade-in">
-                <div class="step-number">1</div>
-                <h3>Send Your Brief</h3>
-                <p>WhatsApp or email your product idea, target price, and quantity. I respond within hours.</p>
-            </div>
-            <div class="step-item fade-in fade-in-delay-1">
-                <div class="step-number">2</div>
-                <h3>I Source & Vet</h3>
-                <p>I physically visit and shortlist three verified factories. You receive a clear comparison report.</p>
-            </div>
-            <div class="step-item fade-in fade-in-delay-2">
-                <div class="step-number">3</div>
-                <h3>Sample & Approve</h3>
-                <p>Samples are ordered, inspected by me, and forwarded to you. Approve before bulk order.</p>
-            </div>
-            <div class="step-item fade-in fade-in-delay-3">
-                <div class="step-number">4</div>
-                <h3>Order & Ship</h3>
-                <p>I manage production, carry out pre-shipment QC, and coordinate shipping to your door.</p>
-            </div>
-        </div>
+<!-- ==================== MARKETS ==================== -->
+<section class="section section-sage">
+  <div class="container">
+    <div class="text-center fade-in" style="text-align:center; margin-bottom:56px;">
+      <div class="section-label" style="justify-content:center;">
+        <span class="section-label-line"></span>
+        <span class="section-label-text">Who We Serve</span>
+      </div>
+      <h2 class="section-title" style="margin-bottom:16px;">Three markets, one trusted partner</h2>
+      <p style="font-size:16px; color:var(--text-secondary); max-width:560px; margin:0 auto; line-height:1.7;">Ali understands the import regulations, business culture, and logistics of each region.</p>
     </div>
+    <div class="markets-grid">
+      <div class="market-card fade-in fade-in-delay-1">
+        <div class="market-flag">&#127468;&#127463;</div>
+        <h3 class="market-title">United Kingdom</h3>
+        <p class="market-subtitle">Amazon FBA &middot; eBay &middot; TikTok Shop &middot; Wholesale</p>
+        <p class="market-desc">Customs clearance, VAT guidance, UKCA compliance support. Products ready for Amazon FBA prep and direct-to-warehouse delivery.</p>
+        <span class="market-link">Source for UK &rarr;</span>
+      </div>
+      <div class="market-card fade-in fade-in-delay-2">
+        <div class="market-flag">&#127462;&#127466;</div>
+        <h3 class="market-title">GCC &amp; Middle East</h3>
+        <p class="market-subtitle">UAE &middot; Saudi Arabia &middot; Qatar &middot; Kuwait</p>
+        <p class="market-desc">Dubai-based logistics coordination. Arabic documentation support. Halal certification guidance. Competitive sea and air freight to Jebel Ali.</p>
+        <span class="market-link">Source for GCC &rarr;</span>
+      </div>
+      <div class="market-card fade-in fade-in-delay-3">
+        <div class="market-flag">&#127477;&#127472;</div>
+        <h3 class="market-title">Pakistan</h3>
+        <p class="market-subtitle">Karachi &middot; Lahore &middot; Islamabad</p>
+        <p class="market-desc">Direct sea freight to Karachi Port. Urdu communication available. Experience with Pakistani import documentation and customs procedures.</p>
+        <span class="market-link">Source for Pakistan &rarr;</span>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- ─── EMBEDDED GOOGLE FORM ─── -->
-<section class="contact" id="contact">
-    <div class="section-container">
-        <div class="section-header" style="text-align:center;">
-            <div class="section-tag" style="justify-content:center; display:flex;">Get Started</div>
-            <h2 class="section-title" style="text-align:center;">Get Your Free Quote</h2>
-            <p class="section-subtitle" style="margin:0 auto; text-align:center; max-width:600px;">
-                Fill the form below. I check every submission personally and reply within 2 hours on WhatsApp.
-            </p>
-        </div>
-        <div style="max-width:800px; margin:0 auto;">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTLk8JaszWE1CvmJo_eoxmRhqJbYoBOHdtcasFxk-H5dywig/viewform?embedded=true&hl=en" 
-                width="100%" 
-                height="800" 
-                frameborder="0" 
-                marginheight="0" 
-                marginwidth="0"
-                style="border-radius:12px; background:var(--dark-2);">
-                Loading…
-            </iframe>
-        </div>
-        <div style="text-align:center; margin-top:40px;">
-            <p style="color:rgba(255,255,255,0.5); margin-bottom:16px;">Prefer WhatsApp? Message me directly.</p>
-            <a href="https://wa.me/447775412819" target="_blank" class="btn-whatsapp">
-                <i class="fab fa-whatsapp"></i>
-                +44 7775 412819
-            </a>
-        </div>
+<!-- ==================== TESTIMONIALS ==================== -->
+<section class="section" style="border-top:1px solid var(--border);">
+  <div class="container">
+    <div class="text-center fade-in" style="text-align:center; margin-bottom:40px;">
+      <div class="section-label" style="justify-content:center;">
+        <span class="section-label-line"></span>
+        <span class="section-label-text">Client Words</span>
+      </div>
+      <h2 class="section-title">Trusted by importers across three continents</h2>
     </div>
+    <div class="testimonials-carousel fade-in">
+      <div class="testimonial-card">
+        <div class="testimonial-quote">&ldquo;</div>
+        <p class="testimonial-text">Ali found us a factory that cut our unit cost by 30% while improving quality. The video inspection reports gave us complete confidence.</p>
+        <div class="testimonial-line"></div>
+        <div class="testimonial-name">James R.</div>
+        <div class="testimonial-detail">London &middot; Amazon FBA Seller</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-quote">&ldquo;</div>
+        <p class="testimonial-text">First time importing from China and Ali made it feel easy. Daily WhatsApp updates, clear photos, and the shipment arrived exactly on day 12.</p>
+        <div class="testimonial-line"></div>
+        <div class="testimonial-name">Omar A.</div>
+        <div class="testimonial-detail">Dubai &middot; Electronics Retailer</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-quote">&ldquo;</div>
+        <p class="testimonial-text">We've worked with three sourcing agents before. Ali is the only one who actually visits the factory floor and sends us real footage.</p>
+        <div class="testimonial-line"></div>
+        <div class="testimonial-name">Sarah K.</div>
+        <div class="testimonial-detail">Manchester &middot; Homeware Brand</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-quote">&ldquo;</div>
+        <p class="testimonial-text">From Guangzhou to Karachi in 18 days. Ali handled every customs document. Our best China shipment ever.</p>
+        <div class="testimonial-line"></div>
+        <div class="testimonial-name">Imran H.</div>
+        <div class="testimonial-detail">Karachi &middot; Wholesale Trader</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-quote">&ldquo;</div>
+        <p class="testimonial-text">The low MOQ flexibility is a game-changer for us as a startup. Ali negotiated 100-unit minimums when other agents refused below 500.</p>
+        <div class="testimonial-line"></div>
+        <div class="testimonial-name">Fatima S.</div>
+        <div class="testimonial-detail">Riyadh &middot; Beauty Brand</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-quote">&ldquo;</div>
+        <p class="testimonial-text">Ali's knowledge of UK customs saved us a &pound;2,000 VAT headache. He thinks two steps ahead.</p>
+        <div class="testimonial-line"></div>
+        <div class="testimonial-name">David L.</div>
+        <div class="testimonial-detail">Birmingham &middot; eBay Power Seller</div>
+      </div>
+    </div>
+    <p class="drag-hint">Swipe to explore</p>
+  </div>
 </section>
 
-<!-- ─── FOOTER ─── -->
-<footer>
+<!-- ==================== PRODUCTS ==================== -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div>
+        <div class="section-label">
+          <span class="section-label-line"></span>
+          <span class="section-label-text">Products</span>
+        </div>
+        <h2 class="section-title">This week's factory finds</h2>
+      </div>
+      <p class="section-subtitle">Real products from real factories. Updated weekly with new sourcing opportunities.</p>
+    </div>
+    <div class="products-grid">
+      <div class="product-card fade-in fade-in-delay-1">
+        <div class="product-image"><img src="images/products-resistance-bands.jpg" alt="Resistance Bands Set" loading="lazy"></div>
+        <div class="product-body">
+          <h3 class="product-name">Resistance Bands Set</h3>
+          <p class="product-desc">5-piece latex resistance band set with foam handles and door anchor</p>
+          <div class="product-specs"><span>MOQ: 200</span><span>$2.80/unit</span></div>
+          <a href="https://wa.me/447775412819?text=Hi%20Ali,%20I'm%20interested%20in%20Resistance%20Bands%20Set" target="_blank" class="btn-whatsapp-sm">Inquire on WhatsApp</a>
+        </div>
+      </div>
+      <div class="product-card fade-in fade-in-delay-2">
+        <div class="product-image"><img src="images/products-pet-bowls.jpg" alt="Eco-Friendly Pet Bowls" loading="lazy"></div>
+        <div class="product-body">
+          <h3 class="product-name">Eco-Friendly Pet Bowls</h3>
+          <p class="product-desc">Bamboo fibre pet bowls in natural beige, 3 sizes nested together</p>
+          <div class="product-specs"><span>MOQ: 500</span><span>$1.50/unit</span></div>
+          <a href="https://wa.me/447775412819?text=Hi%20Ali,%20I'm%20interested%20in%20Eco-Friendly%20Pet%20Bowls" target="_blank" class="btn-whatsapp-sm">Inquire on WhatsApp</a>
+        </div>
+      </div>
+      <div class="product-card fade-in fade-in-delay-3">
+        <div class="product-image"><img src="images/products-storage-organizers.jpg" alt="Stackable Storage Organizers" loading="lazy"></div>
+        <div class="product-body">
+          <h3 class="product-name">Stackable Storage Organizers</h3>
+          <p class="product-desc">Clear acrylic drawer organizers for home and office organisation</p>
+          <div class="product-specs"><span>MOQ: 300</span><span>$3.20/unit</span></div>
+          <a href="https://wa.me/447775412819?text=Hi%20Ali,%20I'm%20interested%20in%20Stackable%20Storage%20Organizers" target="_blank" class="btn-whatsapp-sm">Inquire on WhatsApp</a>
+        </div>
+      </div>
+      <div class="product-card fade-in fade-in-delay-1">
+        <div class="product-image"><img src="images/products-silicone-bags.jpg" alt="Reusable Silicone Food Bags" loading="lazy"></div>
+        <div class="product-body">
+          <h3 class="product-name">Reusable Silicone Food Bags</h3>
+          <p class="product-desc">Food-grade silicone storage bags in multiple sizes and colours</p>
+          <div class="product-specs"><span>MOQ: 400</span><span>$1.80/unit</span></div>
+          <a href="https://wa.me/447775412819?text=Hi%20Ali,%20I'm%20interested%20in%20Reusable%20Silicone%20Food%20Bags" target="_blank" class="btn-whatsapp-sm">Inquire on WhatsApp</a>
+        </div>
+      </div>
+      <div class="product-card fade-in fade-in-delay-2">
+        <div class="product-image"><img src="images/products-phone-stand.jpg" alt="Phone Stand with Wireless Charger" loading="lazy"></div>
+        <div class="product-body">
+          <h3 class="product-name">Phone Stand with Wireless Charger</h3>
+          <p class="product-desc">Aluminium phone stand with integrated 15W wireless charging pad</p>
+          <div class="product-specs"><span>MOQ: 250</span><span>$4.50/unit</span></div>
+          <a href="https://wa.me/447775412819?text=Hi%20Ali,%20I'm%20interested%20in%20Phone%20Stand%20with%20Wireless%20Charger" target="_blank" class="btn-whatsapp-sm">Inquire on WhatsApp</a>
+        </div>
+      </div>
+      <div class="product-card fade-in fade-in-delay-3">
+        <div class="product-image"><img src="images/products-cleansing-brush.jpg" alt="Facial Cleansing Brush Set" loading="lazy"></div>
+        <div class="product-body">
+          <h3 class="product-name">Facial Cleansing Brush Set</h3>
+          <p class="product-desc">Electric silicone facial cleansing brush with charging dock</p>
+          <div class="product-specs"><span>MOQ: 200</span><span>$3.90/unit</span></div>
+          <a href="https://wa.me/447775412819?text=Hi%20Ali,%20I'm%20interested%20in%20Facial%20Cleansing%20Brush%20Set" target="_blank" class="btn-whatsapp-sm">Inquire on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ABOUT ==================== -->
+<section class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="fade-in">
+        <div class="section-label">
+          <span class="section-label-line"></span>
+          <span class="section-label-text">About Ali</span>
+        </div>
+        <h2 class="section-title" style="margin-bottom:24px;">Based in Guangzhou.<br>Connected to the world.</h2>
+        <p>Ali Kiyani is a China-based sourcing agent with years of experience connecting international buyers directly with Chinese manufacturers. Based in Guangzhou &mdash; the manufacturing capital of the world &mdash; Ali personally visits factories, negotiates prices, and oversees quality control.</p>
+        <p>Unlike large sourcing companies that pass you between departments, Ali offers a personal, end-to-end service. One point of contact from your first message to final delivery.</p>
+        <a href="https://wa.me/447775412819" target="_blank" class="about-link">Connect on WhatsApp &rarr;</a>
+      </div>
+      <div class="about-image fade-in fade-in-delay-2">
+        <img src="images/about-ali-profile.jpg" alt="Ali Kiyani - China Sourcing Agent in Guangzhou">
+        <div class="badge badge-gold"><span class="badge-lg">10+</span><br>Years in China</div>
+        <div class="badge badge-dark">Guangzhou Based</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="fade-in">
+        <div class="section-label">
+          <span class="section-label-line"></span>
+          <span class="section-label-text">Get in Touch</span>
+        </div>
+        <h2 class="section-title" style="margin-bottom:16px;">Ready to source from China?</h2>
+        <p style="font-size:17px; color:var(--text-secondary); line-height:1.7; margin-bottom:32px;">Tell us what you're looking for. Ali responds within 24 hours on WhatsApp.</p>
+
+        <div class="contact-item">
+          <div class="contact-icon whatsapp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <a href="https://wa.me/447775412819" target="_blank">+44 7775 412819</a>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon default">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(245,240,232,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <span>ali@tradewithkiyani.com</span>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon default">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(245,240,232,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <span>Guangzhou, China</span>
+        </div>
+
+        <div class="social-row">
+          <a href="https://tiktok.com/@tradewithkiyani" target="_blank" class="social-icon-btn" aria-label="TikTok">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.36 6.36 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.83a8.24 8.24 0 0 0 4.83 1.55v-3.5a4.85 4.85 0 0 1-1.07-.19z"/></svg>
+          </a>
+          <a href="https://instagram.com/tradewithkiyani" target="_blank" class="social-icon-btn" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://facebook.com/tradewithkiyani" target="_blank" class="social-icon-btn" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/tradewithkiyani" target="_blank" class="social-icon-btn" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://x.com/tradewithkiyani" target="_blank" class="social-icon-btn" aria-label="X">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://t.me/tradewithkiyani" target="_blank" class="social-icon-btn" aria-label="Telegram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-card fade-in fade-in-delay-2" id="formCard">
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-group"><input type="text" name="name" placeholder="Your Name" class="form-input" required></div>
+          <div class="form-group"><input type="email" name="email" placeholder="Email Address" class="form-input" required></div>
+          <div class="form-group"><input type="tel" name="whatsapp" placeholder="WhatsApp Number" class="form-input"></div>
+          <div class="form-group"><textarea name="product" rows="4" placeholder="What product are you looking to source?" class="form-input" required></textarea></div>
+          <div class="form-group">
+            <select name="market" class="form-input">
+              <option value="UK">United Kingdom</option>
+              <option value="GCC">GCC / Middle East</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
+          <div style="text-align:center; margin-top:12px;">
+            <a href="https://wa.me/447775412819" target="_blank" style="font-size:11px; letter-spacing:0.06em; color:var(--whatsapp);">Prefer WhatsApp? Message Ali directly</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container">
     <div class="footer-grid">
-        <div class="footer-brand">
-            <a href="index.html" class="nav-logo" style="text-decoration:none;">
-                <div class="logo-icon">TK</div>
-                <div class="logo-text">
-                    <span>Trade With Kiyani</span>
-                    <span>Guangzhou · UK · Pakistan · Dubai</span>
-                </div>
-            </a>
-            <p>Your trusted China sourcing agent. Factory-direct products for UK Amazon, TikTok, eBay, and wholesale buyers.</p>
-        </div>
-        <div class="footer-col">
-            <h5>Pages</h5>
-            <ul class="footer-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="social-platforms.html">Social Platforms</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h5>Resources</h5>
-            <ul class="footer-links">
-                <li><a href="education.html">Education</a></li>
-                <li><a href="blog/index.html">Blog</a></li>
-                <li><a href="services.html">Services</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h5>Contact</h5>
-            <ul class="footer-links">
-                <li><a href="https://wa.me/447775412819">WhatsApp</a></li>
-                <li><a href="mailto:tradewithkiyani@gmail.com">Email</a></li>
-                <li><a href="social-platforms.html">Social Media</a></li>
-            </ul>
-        </div>
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom:12px;">
+          <div class="logo-icon">TK</div>
+          <div>
+            <div class="logo-text">Trade With Kiyani</div>
+            <div class="logo-sub">Guangzhou &middot; China</div>
+          </div>
+        </a>
+        <p>Your eyes on the ground in China. Factory-direct sourcing for UK Amazon sellers, GCC importers, and Pakistani traders.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="social.html">Social</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><span>Supplier Search</span></li>
+          <li><span>Quality Control</span></li>
+          <li><span>Shipping</span></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://wa.me/447775412819" target="_blank">WhatsApp</a></li>
+          <li><a href="mailto:ali@tradewithkiyani.com">Email</a></li>
+          <li><a href="https://instagram.com/tradewithkiyani" target="_blank">Instagram</a></li>
+          <li><a href="https://tiktok.com/@tradewithkiyani" target="_blank">TikTok</a></li>
+        </ul>
+      </div>
     </div>
     <div class="footer-bottom">
-        <p>© 2026 Trade With Kiyani. All rights reserved. Founded by Ali Kiyani.</p>
-        <p>Guangzhou 🇨🇳 · UK 🇬🇧 · Pakistan 🇵🇰 · Dubai 🇦🇪</p>
+      <p>&copy; 2025 Trade With Kiyani. All rights reserved.</p>
+      <p>Made with care in Guangzhou</p>
     </div>
+  </div>
 </footer>
 
-<!-- ─── WHATSAPP FLOAT ─── -->
+<!-- ==================== WHATSAPP FLOAT ==================== -->
 <div class="whatsapp-float">
-    <div class="whatsapp-tooltip">Chat with Ali on WhatsApp</div>
-    <a href="https://wa.me/447775412819" target="_blank" class="whatsapp-btn">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+  <a href="https://wa.me/447775412819" target="_blank" aria-label="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
 </div>
 
-<!-- ─── JAVASCRIPT ─── -->
+<!-- ==================== JAVASCRIPT ==================== -->
 <script>
-    window.addEventListener('scroll', () => {
-        const navbar = document.getElementById('navbar');
-        if (window.scrollY > 50) navbar.classList.add('scrolled');
-        else navbar.classList.remove('scrolled');
-    });
-    function toggleMenu() {
-        document.getElementById('mobileMenu').classList.toggle('open');
-    }
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-    }, { threshold: 0.15 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-</script>
+// Navbar scroll effect
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 100);
+});
 
+// Mobile menu
+function toggleMenu() {
+  document.getElementById('hamburger').classList.toggle('open');
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+// Particle background
+(function() {
+  const container = document.getElementById('particles');
+  const count = 60;
+  for (let i = 0; i < count; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const size = Math.random() * 2 + 1;
+    p.style.width = size + 'px';
+    p.style.height = size + 'px';
+    p.style.left = (Math.random() * 100) + '%';
+    p.style.top = (Math.random() * 100) + '%';
+    p.style.opacity = Math.random() * 0.5 + 0.2;
+    const duration = Math.random() * 20 + 15;
+    const delay = Math.random() * -20;
+    const tx = (Math.random() - 0.5) * 300;
+    const ty = (Math.random() - 0.5) * 300;
+    p.style.setProperty('--tx', tx + 'px');
+    p.style.setProperty('--ty', ty + 'px');
+    p.style.animationDuration = duration + 's';
+    p.style.animationDelay = delay + 's';
+    if (Math.random() > 0.7) p.style.background = '#c9a84c';
+    else if (Math.random() > 0.7) p.style.background = '#8b9a6d';
+    container.appendChild(p);
+  }
+})();
+
+// Trust bar
+(function() {
+  const badges = [
+    'No Supplier Commissions', 'Registered in Guangzhou', 'Factory-Direct Sourcing',
+    'Quality Control Included', 'Low MOQ Accepted', 'WhatsApp-First Service',
+    'UK &middot; GCC &middot; Pakistan', 'Canton Fair Access'
+  ];
+  const track = document.getElementById('trustTrack');
+  const items = [...badges, ...badges];
+  track.innerHTML = items.map(b => `<span class="trust-item">${b} <span class="trust-divider">&#9670;</span></span>`).join('');
+})();
+
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Contact form
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+
+  const form = e.target;
+  const body = new URLSearchParams();
+  body.append('entry.1803408939', form.name.value);
+  body.append('entry.1357306539', form.email.value);
+  body.append('entry.108383588', form.whatsapp.value);
+  body.append('entry.1983137450', form.product.value);
+  body.append('entry.1314533175', form.market.value);
+
+  fetch('https://docs.google.com/forms/d/e/1FAIpQLScbMoizedMtkp1DZDVxGhE2hSiHpCYSRxfEWYBNqGjreskvdg/formResponse', {
+    method: 'POST',
+    body: body,
+    mode: 'no-cors'
+  }).then(() => {
+    document.getElementById('formCard').innerHTML = `
+      <div class="form-success">
+        <div class="form-success-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8b9a6d" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <h3>Message sent!</h3>
+        <p>Ali will respond within 24 hours.</p>
+      </div>`;
+  }).catch(() => {
+    btn.disabled = false;
+    btn.textContent = 'Send Message';
+  });
+}
+</script>
 </body>
 </html>

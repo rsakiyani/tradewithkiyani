@@ -1,177 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News | Trade With Kiyani — UK-China Shipping & Trade Updates</title>
-    <meta name="description" content="Latest UK-China shipping rates, import regulations, Canton Fair dates, and trade news for Amazon FBA and TikTok Shop sellers.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News | Trade With Kiyani — Sourcing Insights & Updates</title>
+  <meta name="description" content="Stay informed on sourcing trends, shipping updates, and market insights from China for UK, GCC, and Pakistan importers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<!-- ─── NAVBAR ─── -->
-<nav id="navbar">
-    <div class="nav-container">
-        <a href="index.html" class="nav-logo">
-            <div class="logo-icon">TK</div>
-            <div class="logo-text">
-                <span>Trade With Kiyani</span>
-                <span>Guangzhou · UK · Pakistan · Dubai</span>
-            </div>
-        </a>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="social-platforms.html">Social Platforms</a></li>
-            <li><a href="index.html#contact" class="nav-cta">Get a Quote</a></li>
-        </ul>
-        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-            <span></span><span></span><span></span>
-        </div>
+<!-- ==================== NAVIGATION ==================== -->
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">TK</div>
+      <div><div class="logo-text">Trade With Kiyani</div><div class="logo-sub">Guangzhou &middot; China</div></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="news.html" class="active">News</a></li>
+      <li><a href="social.html">Social</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:12px;" class="nav-cta-group">
+      <a href="index.html#contact" class="nav-cta">Get a Quote</a>
+      <a href="https://wa.me/447775412819" target="_blank" class="nav-whatsapp" aria-label="WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </a>
     </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
 </nav>
 
-<!-- ─── MOBILE MENU ─── -->
 <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-close" onclick="toggleMenu()"><i class="fas fa-times"></i></button>
-    <a href="index.html" onclick="toggleMenu()">Home</a>
-    <a href="products.html" onclick="toggleMenu()">Products</a>
-    <a href="news.html" onclick="toggleMenu()">News</a>
-    <a href="social-platforms.html" onclick="toggleMenu()">Social Platforms</a>
-    <a href="index.html#contact" onclick="toggleMenu()">Get a Quote</a>
+  <button class="mobile-close" onclick="toggleMenu()">&times;</button>
+  <a href="index.html" onclick="toggleMenu()">Home</a>
+  <a href="products.html" onclick="toggleMenu()">Products</a>
+  <a href="news.html" onclick="toggleMenu()">News</a>
+  <a href="social.html" onclick="toggleMenu()">Social</a>
 </div>
 
-<!-- ─── PAGE HEADER ─── -->
+<!-- ==================== PAGE HEADER ==================== -->
 <section class="page-header">
-    <div class="page-header-content">
-        <div class="section-tag" style="justify-content:center; display:flex;">News & Updates</div>
-        <h1 class="section-title" style="text-align:center;">UK-China Shipping & Trade News</h1>
-        <p class="section-subtitle" style="margin:0 auto; text-align:center; max-width:600px;">
-            Latest updates that affect your importing business. Shipping rates, tariffs, regulations, and industry trends.
-        </p>
+  <div class="container">
+    <div class="section-label">
+      <span class="section-label-line"></span>
+      <span class="section-label-text">Insights</span>
     </div>
+    <h1>News &amp; Updates</h1>
+    <p>Stay informed on sourcing trends, shipping updates, and market insights from China.</p>
+  </div>
 </section>
 
-<!-- ─── NEWS SECTION ─── -->
-<section class="news" style="padding-top:40px;">
-    <div class="section-container">
-        <div class="news-grid">
+<!-- ==================== NEWS GRID ==================== -->
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="news-grid">
 
-            <!-- NEWS 1 — LATEST (always add new at top) -->
-            <div class="news-card fade-in">
-                <div class="news-date">May 7, 2026</div>
-                <h3>China-UK Sea Freight Rates Drop 15%</h3>
-                <p>Container shipping costs from Shanghai to Felixstowe have decreased significantly this month. Good time to place larger orders and lock in lower shipping rates for Q3.</p>
-                <span class="news-tag">Shipping</span>
-            </div>
-
-            <!-- NEWS 2 -->
-            <div class="news-card fade-in fade-in-delay-1">
-                <div class="news-date">May 5, 2026</div>
-                <h3>New UK Import Rules for 2026</h3>
-                <p>Updated customs documentation requirements for Chinese imports. New HS code classifications for electronics and textiles. Make sure your supplier provides correct paperwork.</p>
-                <span class="news-tag">Regulations</span>
-            </div>
-
-            <!-- NEWS 3 -->
-            <div class="news-card fade-in fade-in-delay-2">
-                <div class="news-date">May 3, 2026</div>
-                <h3>Canton Fair Autumn 2026 Dates Announced</h3>
-                <p>Phase 1: October 15-19, Phase 2: October 23-27, Phase 3: November 1-5. Planning to attend? Book flights and hotels early — Guangzhou gets packed during fair season.</p>
-                <span class="news-tag">Canton Fair</span>
-            </div>
-
-            <!-- NEWS 4 -->
-            <div class="news-card fade-in">
-                <div class="news-date">April 28, 2026</div>
-                <h3>TikTok Shop UK Expands Product Categories</h3>
-                <p>TikTok Shop UK now accepts home goods, pet products, and fitness equipment from Chinese sellers. New opportunity for UK-based TikTok sellers to source directly.</p>
-                <span class="news-tag">TikTok Shop</span>
-            </div>
-
-            <!-- NEWS 5 -->
-            <div class="news-card fade-in fade-in-delay-1">
-                <div class="news-date">April 25, 2026</div>
-                <h3>Amazon FBA Low Inventory Fee Update</h3>
-                <p>Amazon UK updated low inventory level fees. Sellers need to maintain 28+ days of stock to avoid penalties. Plan your China orders accordingly — add 2 weeks buffer.</p>
-                <span class="news-tag">Amazon FBA</span>
-            </div>
-
-            <!-- NEWS 6 -->
-            <div class="news-card fade-in fade-in-delay-2">
-                <div class="news-date">April 20, 2026</div>
-                <h3>Guangzhou Factory Output Increases</h3>
-                <p>Manufacturing capacity back to pre-holiday levels. Lead times reduced from 45 days to 30 days for most consumer products. Faster turnaround for UK orders.</p>
-                <span class="news-tag">Factory Updates</span>
-            </div>
-
+      <article class="news-card fade-in fade-in-delay-1">
+        <div class="news-image"><img src="images/carousel-canton-fair.jpg" alt="Canton Fair 2025" loading="lazy"></div>
+        <div class="news-body">
+          <div class="news-meta">
+            <span class="news-category">Industry</span>
+            <span class="news-divider">|</span>
+            <span class="news-date">1 May 2025</span>
+          </div>
+          <h3 class="news-title">Canton Fair 2025: Key Trends for UK Importers</h3>
+          <p class="news-excerpt">The 137th Canton Fair revealed major shifts in manufacturing. Here's what UK Amazon sellers need to know about pricing, MOQs, and emerging product categories.</p>
         </div>
+      </article>
+
+      <article class="news-card fade-in fade-in-delay-2">
+        <div class="news-image"><img src="images/carousel-shipping-containers.jpg" alt="New Shipping Route" loading="lazy"></div>
+        <div class="news-body">
+          <div class="news-meta">
+            <span class="news-category">Shipping</span>
+            <span class="news-divider">|</span>
+            <span class="news-date">15 Apr 2025</span>
+          </div>
+          <h3 class="news-title">New Shipping Route: Guangzhou to Dubai in 12 Days</h3>
+          <p class="news-excerpt">A new consolidated sea freight service promises faster delivery times for GCC importers. We break down the costs and requirements.</p>
+        </div>
+      </article>
+
+      <article class="news-card fade-in fade-in-delay-3">
+        <div class="news-image"><img src="images/carousel-product-inspection.jpg" alt="UKCA Marking" loading="lazy"></div>
+        <div class="news-body">
+          <div class="news-meta">
+            <span class="news-category">Regulations</span>
+            <span class="news-divider">|</span>
+            <span class="news-date">2 Apr 2025</span>
+          </div>
+          <h3 class="news-title">UKCA Marking: Updated Guidelines for China Imports</h3>
+          <p class="news-excerpt">The UK has updated its conformity assessment requirements. Here's how to ensure your products meet the new standards.</p>
+        </div>
+      </article>
+
+      <article class="news-card fade-in fade-in-delay-1">
+        <div class="news-image"><img src="images/carousel-factory-floor.jpg" alt="Trending Products" loading="lazy"></div>
+        <div class="news-body">
+          <div class="news-meta">
+            <span class="news-category">Products</span>
+            <span class="news-divider">|</span>
+            <span class="news-date">20 Mar 2025</span>
+          </div>
+          <h3 class="news-title">5 Trending Products to Source This Quarter</h3>
+          <p class="news-excerpt">From smart home devices to eco-friendly pet accessories, these are the products flying off the shelves in Q2 2025.</p>
+        </div>
+      </article>
+
+      <article class="news-card fade-in fade-in-delay-2">
+        <div class="news-image"><img src="images/carousel-guangzhou-skyline.jpg" alt="Karachi Port" loading="lazy"></div>
+        <div class="news-body">
+          <div class="news-meta">
+            <span class="news-category">Pakistan</span>
+            <span class="news-divider">|</span>
+            <span class="news-date">5 Mar 2025</span>
+          </div>
+          <h3 class="news-title">Karachi Port Expansion: What It Means for Importers</h3>
+          <p class="news-excerpt">The new container terminal at Karachi Port is now operational. Reduced clearance times and lower handling fees for Chinese imports.</p>
+        </div>
+      </article>
+
+      <article class="news-card fade-in fade-in-delay-3">
+        <div class="news-image"><img src="images/carousel-negotiation.jpg" alt="Negotiation Tips" loading="lazy"></div>
+        <div class="news-body">
+          <div class="news-meta">
+            <span class="news-category">Tips</span>
+            <span class="news-divider">|</span>
+            <span class="news-date">18 Feb 2025</span>
+          </div>
+          <h3 class="news-title">How to Negotiate Better Prices with Chinese Suppliers</h3>
+          <p class="news-excerpt">Ali shares his top strategies for getting factory-direct prices without sacrificing quality or damaging supplier relationships.</p>
+        </div>
+      </article>
+
     </div>
+  </div>
 </section>
 
-<!-- ─── FOOTER ─── -->
-<footer>
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container">
     <div class="footer-grid">
-        <div class="footer-brand">
-            <a href="index.html" class="nav-logo" style="text-decoration:none;">
-                <div class="logo-icon">TK</div>
-                <div class="logo-text">
-                    <span>Trade With Kiyani</span>
-                    <span>Guangzhou · UK · Pakistan · Dubai</span>
-                </div>
-            </a>
-            <p>Your trusted China sourcing agent. Factory-direct products for UK Amazon, TikTok, eBay, and wholesale buyers.</p>
-        </div>
-        <div class="footer-col">
-            <h5>Pages</h5>
-            <ul class="footer-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="social-platforms.html">Social Platforms</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h5>Contact</h5>
-            <ul class="footer-links">
-                <li><a href="https://wa.me/447775412819">WhatsApp</a></li>
-                <li><a href="mailto:tradewithkiyani@gmail.com">Email</a></li>
-                <li><a href="index.html#contact">Get a Quote</a></li>
-            </ul>
-        </div>
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom:12px;">
+          <div class="logo-icon">TK</div>
+          <div><div class="logo-text">Trade With Kiyani</div><div class="logo-sub">Guangzhou &middot; China</div></div>
+        </a>
+        <p>Your eyes on the ground in China. Factory-direct sourcing for UK Amazon sellers, GCC importers, and Pakistani traders.</p>
+      </div>
+      <div class="footer-col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="products.html">Products</a></li><li><a href="news.html">News</a></li><li><a href="social.html">Social</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><span>Supplier Search</span></li><li><span>Quality Control</span></li><li><span>Shipping</span></li><li><a href="index.html#contact">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Connect</h4><ul><li><a href="https://wa.me/447775412819" target="_blank">WhatsApp</a></li><li><a href="mailto:ali@tradewithkiyani.com">Email</a></li><li><a href="https://instagram.com/tradewithkiyani" target="_blank">Instagram</a></li><li><a href="https://tiktok.com/@tradewithkiyani" target="_blank">TikTok</a></li></ul></div>
     </div>
-    <div class="footer-bottom">
-        <p>© 2026 Trade With Kiyani. All rights reserved.</p>
-        <p>Guangzhou 🇨🇳 · UK 🇬🇧 · Pakistan 🇵🇰 · Dubai 🇦🇪</p>
-    </div>
+    <div class="footer-bottom"><p>&copy; 2025 Trade With Kiyani. All rights reserved.</p><p>Made with care in Guangzhou</p></div>
+  </div>
 </footer>
 
-<!-- ─── WHATSAPP FLOAT ─── -->
 <div class="whatsapp-float">
-    <div class="whatsapp-tooltip">Chat with Ali on WhatsApp</div>
-    <a href="https://wa.me/447775412819" target="_blank" class="whatsapp-btn">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+  <a href="https://wa.me/447775412819" target="_blank" aria-label="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
 </div>
 
-<!-- ─── JAVASCRIPT ─── -->
 <script>
-    window.addEventListener('scroll', () => {
-        const navbar = document.getElementById('navbar');
-        if (window.scrollY > 50) navbar.classList.add('scrolled');
-        else navbar.classList.remove('scrolled');
-    });
-    function toggleMenu() {
-        document.getElementById('mobileMenu').classList.toggle('open');
-    }
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-    }, { threshold: 0.15 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+function toggleMenu() {
+  document.getElementById('hamburger').classList.toggle('open');
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 </script>
-
 </body>
 </html>
